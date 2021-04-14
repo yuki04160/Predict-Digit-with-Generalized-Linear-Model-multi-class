@@ -1,1 +1,1 @@
-# Predict-Digit-with-Multi-class-Logistic-Regression
+# Predict-Digit-with-Multiclass-Logistic-Regression
