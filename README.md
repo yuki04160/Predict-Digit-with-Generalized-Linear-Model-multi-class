@@ -1,1 +1,1 @@
-# Predict-Digit-with-Generalized-Linear-Model-multi-class
+# Predict-Digit-with-Multi-class-Logistic-Regression
