@@ -1,5 +1,5 @@
 # Predicting Handwritten Digit with Multi-class Logistic Regression
-To predict handwritten digits (0~9), I built a Multi-class Logistic Regression in R using Kaggle dataset [mnist_test](https://www.kaggle.com/oddrationale/mnist-in-csv).
+To predict handwritten digits (0~9), I built a Multi-class Logistic Regression in R using Kaggle dataset [mnist_test](https://www.kaggle.com/oddrationale/mnist-in-csv), which is an image pixel dataset.
 ## Inrtroduction
 Generalized Linear Model (GLM) is a flexible generalization of ordinary linear regression. To be more specific, GLM allows for response variables that have error distribution models other than a normal distribution. In this project, I applied one type of GLM, Logistic Regression Model, to predict handwritten digits. Since it is a multiclass classification problem, I utilized Multi-class Logistic Regression, which is also called Multinomial Logistic Regression or Softmax Regression.
 ## Exploratory Data Analysis
@@ -15,4 +15,4 @@ Generalized Linear Model (GLM) is a flexible generalization of ordinary linear r
    - Accuracy
    - True Positive Rate (Sensitivity/ Recall) of each class/ digit
 ## Conclusion
-To sum up, I trained 10 models, one per digit. Then, I used each model to predict on the test dataset, which contains 3000 images, so I got a total of 10x3000=30000 probabilities (10 probabilities per image). For each image, I used the Softmax function to turn those 10 unrelated probabilities into 10 related probabilities. Based on the 10 related probabilities, the predicted digit for each image is the one associated with the maximum probability. Finally, with predicted results, I built a confusion matrix and calculated the overall accuracy.
+To sum up, I trained 10 models, one per digit, and used the Softmax function to turn unrelated probabilities into related probabilities. Finally, with predicted results, I built a confusion matrix and calculated the overall accuracy. From the model results, I found that digit 1 has the highest TPR, above 90%, and digits 0 and 7 also have high TPR, above 80%. However, digits 5 and 8 have lower TPR, only around 65%. THat is to say, the model can highly correctly recognize handwritten digits of 1, 0, and 7, but can not recognize handwritten digits of 5 and 8 very well.
