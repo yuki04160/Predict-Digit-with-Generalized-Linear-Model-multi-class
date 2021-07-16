@@ -5,12 +5,15 @@ Generalized Linear Model (GLM) is a flexible generalization of ordinary linear r
 ## Exploratory Data Analysis
 1. Plot Images
 2. Plot Digit Labels Distribution
-3. Examine Missing Value
-4. Data Preprocessing: split into Training (0.8) and Test (0.2)
+## Data Preprocessing
+1. Examine Missing Value
+2. Split into Training (0.8) and Test (0.2)
 ## Data Modeling
-1.
-2.
-3.
-
-
-The "mnist_test" is a dataset containing 10,000 of 28x28 grayscale images. Each image is encoded as a row of 784 (28x28) integer values between 0 and 255 indicating the brightness of each pixel. The label associated with each image is encoded as an integer value between 0 and 9. Overall, there are 785 columns in the dataset, where the first column corresponds to the digit labels (0-9), and the remaining 784 columns correspond to the pixel-values of the associated image. To predict a digit, the first column is used as the target variable.
+1. Build 10 Logistic Regression Models (one per digit)
+2. Create Softmax Function
+   - THe function turns a vector of K real values into a vector of K real values that sum to 1.
+## Multiclass Classification Model Evaluation
+   - Accuracy
+   - True Positive Rate (Sensitivity/ Recall) of each digit
+## Conclusion
+To sum up, I trained 10 models, one per digit. Then, I used each model to predict on the test dataset, which contains 3000 images, so I got a total of 10x3000=30000 probabilities (10 probabilities per image). For each image, I used the Softmax function to turn those 10 unrelated probabilities into 10 related probabilities. Based on the 10 related probabilities, the predicted digit for each image is the one associated with the maximum probability. Finally, with predicted results, I built a confusion matrix and calculated the overall accuracy.
