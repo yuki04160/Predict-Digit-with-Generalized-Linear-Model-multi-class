@@ -14,6 +14,6 @@ Generalized Linear Model (GLM) is a flexible generalization of ordinary linear r
    - THe function turns a vector of K real values into a vector of K real values that sum to 1.
 ## Multiclass Classification Model Evaluation
    - Accuracy
-   - True Positive Rate (Sensitivity/ Recall) of each class (digit)
+   - True Positive Rate (Sensitivity/ Recall) of each class/digit
 ## Conclusion
 To sum up, I trained 10 models, one per digit. Then, I used each model to predict on the test dataset, which contains 3000 images, so I got a total of 10x3000=30000 probabilities (10 probabilities per image). For each image, I used the Softmax function to turn those 10 unrelated probabilities into 10 related probabilities. Based on the 10 related probabilities, the predicted digit for each image is the one associated with the maximum probability. Finally, with predicted results, I built a confusion matrix and calculated the overall accuracy.
