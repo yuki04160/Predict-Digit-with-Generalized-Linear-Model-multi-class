@@ -10,8 +10,7 @@ Generalized Linear Model (GLM) is a flexible generalization of ordinary linear r
 2. Split into Training (0.8) and Test (0.2)
 ## Data Modeling
 1. Build 10 Logistic Regression Models (one per digit)
-2. Create Softmax Function
-   - The function can turn a vector of K real values into a vector of K real values that sum to 1.
+2. Create Softmax Function (the function can turn a vector of K real values into a vector of K real values that sum to 1)
 ## Multiclass Classification Model Evaluation
    - Accuracy
    - True Positive Rate (Sensitivity/ Recall) of each class/ digit
