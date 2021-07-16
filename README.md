@@ -1,2 +1,2 @@
-# Predicting Handwritten Digit with Multi-class Logistic Regression
+# Predicting Handwritten Digit with Softmax Regression
 
