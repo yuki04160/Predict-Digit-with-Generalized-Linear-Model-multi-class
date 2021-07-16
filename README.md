@@ -1,5 +1,5 @@
 # Predicting Handwritten Digit with Multi-class Logistic Regression
-To predict handwritten digits, I built a Multi-class Logistic Regression in R using Kaggle dataset [mnist_test](https://www.kaggle.com/oddrationale/mnist-in-csv).
+To predict handwritten digits (0~9), I built a Multi-class Logistic Regression in R using Kaggle dataset [mnist_test](https://www.kaggle.com/oddrationale/mnist-in-csv).
 ## Inrtroduction
 Generalized Linear Model (GLM) is a flexible generalization of ordinary linear regression. To be more specific, GLM allows for response variables that have error distribution models other than a normal distribution. In this project, I applied one type of GLM, Logistic Regression Model, to predict handwritten digits. Since it is a multiclass classification problem, I utilized Multi-class Logistic Regression, which is also called Multinomial Logistic Regression or Softmax Regression.
 ## Exploratory Data Analysis
