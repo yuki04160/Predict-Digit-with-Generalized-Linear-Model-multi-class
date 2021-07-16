@@ -6,7 +6,7 @@ Generalized Linear Model (GLM) is a flexible generalization of ordinary linear r
 1. Plot Images
 2. Plot Digit Labels Distribution
 3. Examine Missing Value
-4. Split into Training (0.8) and Test (0.2) datasets
+4. Data Preprocessing: split into Training (0.8) and Test (0.2)
 ## Data Modeling
 1.
 2.
