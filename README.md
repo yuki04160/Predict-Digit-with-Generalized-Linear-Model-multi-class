@@ -1,1 +1,2 @@
-# Predict-Digit-with-Multiclass-Logistic-Regression
+# Predicting Handwritten Digit with Multi-class Logistic Regression
+
