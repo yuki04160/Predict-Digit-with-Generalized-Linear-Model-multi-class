@@ -12,7 +12,7 @@ Generalized Linear Model (GLM) is a flexible generalization of ordinary linear r
 1. Build 10 Logistic Regression Models (one per digit)
 2. Create Softmax Function (the function can turn a vector of K real values into a vector of K real values that sum to 1)
 ## Multiclass Classification Model Evaluation
-   - Accuracy
+   - Overall Accuracy
    - True Positive Rate (Sensitivity/ Recall) of each class/ digit
 ## Conclusion
 To sum up, I trained 10 models, one per digit, and used the Softmax function to turn unrelated probabilities into related probabilities. Finally, with predicted results, I built a confusion matrix and calculated the overall accuracy. From the model results, I found that digit 1 has the highest TPR, above 90%, and digits 0 and 7 also have high TPR, above 80%. However, digits 5 and 8 have lower TPR, only around 65%. THat is to say, the model can highly correctly recognize handwritten digits of 1, 0, and 7, but can not recognize handwritten digits of 5 and 8 very well.
