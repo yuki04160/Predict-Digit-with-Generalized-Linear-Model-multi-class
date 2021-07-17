@@ -14,6 +14,6 @@ Multiclass logistic regression
    - I used the Softmax function to transform unrelated probabilities into a probability distribution over 10 digits
 ## Multiclass Classification Model Evaluation
    - Overall accuracy
-   - True Positive Rate (sensitivity/ recall) of each class/ digit
+   - True Positive Rate (sensitivity/ recall) of each digit
 ## Conclusion
 To sum up, I trained 10 models, one per digit, and used the Softmax function to turn unrelated probabilities into related probabilities. Finally, with predicted results, I built a confusion matrix and calculated the overall accuracy. From the model results, I found that digit 1 has the highest TPR, above 90%, and digits 0 and 7 also have high TPR, above 80%. However, digits 5 and 8 have lower TPR, only around 65%. THat is to say, the model can highly correctly recognize handwritten digits of 1, 0, and 7, but can not recognize handwritten digits of 5 and 8 very well.
