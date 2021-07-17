@@ -3,14 +3,15 @@ To predict handwritten digits (0~9), I built a Multiclass Logistic Regression in
 ## Inrtroduction
 Generalized Linear Model (GLM) is a flexible generalization of ordinary linear regression. To be more specific, GLM allows for response variables that have error distribution models other than a normal distribution. In this project, I applied one type of GLM, Logistic Regression Model, to predict handwritten digits. Since it is a multiclass classification problem, I utilized Multiclass Logistic Regression, which is also called Multinomial Logistic Regression or Softmax Regression.
 ## Exploratory Data Analysis
-1. Plot images
-2. Plot digit labels distribution
+   - Plot images
+   - Plot digit labels distribution
 ## Data Preprocessing
-1. Examine missing value
-2. Split into training (0.8) and test (0.2)
+   - Examine missing value
+   - Split into training (0.8) and test (0.2)
 ## Data Modeling
-1. Build 10 logistic regression models (one per digit)
-2. Create Softmax function (the function can turn a vector of K real values into a vector of K real values that sum to 1)
+Multiclass logistic regression
+   - I built 10 logistic regression models, one per digit
+   - I used the Softmax function to transform unrelated probabilities into a probability distribution over 10 digits
 ## Multiclass Classification Model Evaluation
    - Overall accuracy
    - True Positive Rate (sensitivity/ recall) of each class/ digit
