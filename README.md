@@ -18,6 +18,8 @@ Multiclass logistic regression
 ## Conclusion
 To sum up, I trained 10 models, one per digit, and used the Softmax function to turn unrelated probabilities into related probabilities. Finally, with predicted results, I built a confusion matrix and calculated the overall accuracy. 
 
-
+Digit|0|1|2|3|4|5|6|7|8|9
+-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----
+**Sensitivity (TPR)**|0.8245|0.9124|0.7540|0.7423|0.7286|0.6378|0.7347|0.8350|0.6585|0.7220
 
 From the model results, I found that digit 1 has the highest TPR, above 90%, and digits 0 and 7 also have high TPR, above 80%. However, digits 5 and 8 have lower TPR, only around 65%. That is to say, the model can highly correctly recognize handwritten digits of 1, 0, and 7, but can not recognize handwritten digits of 5 and 8 very well.
