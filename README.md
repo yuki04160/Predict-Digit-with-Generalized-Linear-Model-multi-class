@@ -12,6 +12,7 @@ Generalized Linear Model (GLM) is a flexible generalization of ordinary linear r
 Multiclass logistic regression
    - I used For loop to build 10 logistic regression models, one per digit.
    - I used the Softmax function to transform unrelated probabilities into a probability distribution over 10 digits.
+   - The predicted digit will be the one associated with the maximum probability.
 ## Multiclass Classification Model Evaluation
    - Overall accuracy
    - True Positive Rate (sensitivity/ recall) of each digit
